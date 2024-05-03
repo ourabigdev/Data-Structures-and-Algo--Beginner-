@@ -8,7 +8,7 @@ var Stack = function(){
 
     //adds a value onto the end of the stack
     this.push = function(value){
-        this,storeage[this.count]= value;
+        this.storage[this.count]= value;
         this.count++;
     }
 
@@ -35,11 +35,18 @@ var Stack = function(){
 }
 
 var myStack = new Stack();
+
 myStack.push(1);
 myStack.push(2);
-console.log(myStack.peek);
-console.log(myStack.pop);
-console.log(myStack.peek);
+console.log(myStack.peek());
+console.log(myStack.pop());
+console.log(myStack.peek());
+
+myStack.push("ourabig");
+console.log(myStack.size());
+console.log(myStack.peek());
+console.log(myStack.pop());
+console.log(myStack.peek());
 
 /*
 array as a stack
